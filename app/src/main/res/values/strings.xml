@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="btnOne">One Player</string>
+    <string name="btnTwo">Two Players</string>
+    <string name="exit">Exit Aplication</string>
+    <string name="O">0</string>
+    <string name="X">X</string>
+    <string name="reset">Reset</string>
+    <string name="xpoints">Player 1:</string>
+    <string name="opoints">Player 2:</string>
+</resources>
