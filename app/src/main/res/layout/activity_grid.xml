@@ -4,15 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/picture"
     tools:context="com.bogdancristian.tictactoe.GridActivity">
 
     <LinearLayout
-        android:layout_width="385dp"
-        android:layout_height="566dp"
+        android:layout_width="351dp"
+        android:layout_height="447dp"
 
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent">
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <TableLayout
@@ -20,7 +27,7 @@
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="#4da64d"
+
             android:keepScreenOn="true">
 
             <TableRow
@@ -164,56 +171,38 @@
                     android:textStyle="bold" />
             </TableRow>
         </TableLayout>
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@color/MidnightBlue">
-            <RadioGroup
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="left"
-                android:orientation="horizontal">
-                <RadioButton
-                    android:id="@+id/radio_X"
-                    android:textColor="@color/White"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:text="@string/X"
-                    android:onClick="onRadioButtonClicked"/>
-
-                <RadioButton
-                    android:id="@+id/radio_O"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/O"
-                    android:textColor="@color/White"
-                    android:onClick="onRadioButtonClicked"/>
-
-            </RadioGroup>
-            <TextView
-                android:id="@+id/Reset"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="fill_parent"
-                android:text="@string/reset"
-                android:textColor="@color/White"
-                android:textSize="20sp"
-                android:gravity="center"
-                android:onClick="resetClick"
-                android:clickable="true"/>
-            <TextView
-                android:id="@+id/thing"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="fill_parent"
-                android:textSize="20sp"
-                android:gravity="center"/>
-
+            android:background="@color/MidnightBlue"
+            android:orientation="horizontal">
 
 
         </LinearLayout>
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/playerScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/points"
+        android:textAlignment="center"
+        android:textColor="@color/Azure"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="129dp"
+        android:text="@string/aipoints"
+        android:textColor="@color/Azure"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/playerScore"
+        app:layout_constraintStart_toEndOf="@+id/playerScore" />
 </android.support.constraint.ConstraintLayout>
