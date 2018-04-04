@@ -132,7 +132,7 @@
                 android:gravity="center">
 
                 <TextView
-                    android:id="@+id/cell11"
+                    android:id="@+id/cell31"
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
@@ -145,7 +145,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/cell12"
+                    android:id="@+id/cell32"
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
@@ -158,7 +158,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/cell13"
+                    android:id="@+id/cell33"
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"

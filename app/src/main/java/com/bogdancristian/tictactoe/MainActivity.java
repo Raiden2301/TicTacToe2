@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
+
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         finish();
         System.exit(0);
     }
+
 
 //    boolean sound = true;
 //    final ImageButton btn = (ImageButton)findViewById(R.id.btnSound);
